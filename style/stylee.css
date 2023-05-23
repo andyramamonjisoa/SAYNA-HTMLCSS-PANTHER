@@ -1,0 +1,156 @@
+/*1-Style general*/
+
+*{
+    list-style: none;
+    text-align: justify;
+  }
+
+  body{
+    background: radial-gradient(
+       126.67% 350.28% at -21.35% 0%,
+       #11213F 0%, 
+       #0B0B0B 39.1%, 
+       rgba(2, 23, 64,0.837641) 94.57%, 
+       rgba(2, 23, 64, 0) 100% 
+    );
+    color: #F2CEF2;
+    width: 99%;
+    
+}
+
+a {
+  color: #F2CEF2;
+  
+}
+
+@font-face {
+  font-family:'text';
+src: url();
+
+}
+
+/*2-Style header*/
+
+header {
+    display: flex;
+    height: 3vw;
+    width: 85vw;
+    column-gap: 40%;
+  }
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 35px;
+    margin-left: 50px;
+    align-items: center;
+  }
+
+.logo div img {
+  width: 15px;
+  margin-left: 3px;
+}
+.logo .x img {
+  width: 9px;
+  margin-left: 3px;
+}
+.logo .marvel img {
+  width: 50px;
+  margin-left: 3px;
+}
+
+/*2-a-Style nav*/
+nav{
+  height: 25px;
+}
+nav ul a{
+  text-decoration: none;
+  align-items: first baseline;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 20px;
+  }
+
+/*3-Style main*/
+#intro{
+  height: 1279px;
+  background-image: url(/images/Enigme/Pantherenigme1.png);
+  background-size: contain;
+  background-position: -20% -10%;
+  background-repeat: no-repeat;
+  padding-top: 50vh;
+  padding-right: 2vw;
+}
+
+.titre {
+  margin-left: 55vw;
+  border: 1px solid white;
+}
+
+.intro1 {
+
+  border: 1px solid white;
+}
+.ig{
+  border: 1px solid white;
+}
+
+
+.intro1 div{
+  border: 1px solid white;
+
+}
+
+/*3-Style footer*/
+
+footer  {  
+    height: 692px;
+    background: url(/images/All_pages/back_footer.png);
+    
+    }
+  
+    footer .fg {  
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      } 
+  
+      .f1 {  
+       height: 35vh;
+       width: 35vw;
+       margin-top: 20vh;
+       margin-left: 5vw;
+       justify-content: center;
+       text-align: center;
+       padding-top: 150px;
+       background-image: url(/images/All_pages/footer1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;  
+      } 
+  
+      .sociaux {  
+        margin-top: 20vh;
+        display: flex;
+        gap: 6vw;
+        padding-left: 5vw;
+        height: 300px;
+        
+       } 
+  
+       .final {  
+        display: flex;
+        gap: 2vw;
+        
+       } 
+  
+       .final img {  
+       width: 2.5vw;
+       } 
+  
+       .droit {  
+       padding-left: 5vw;
+        justify-content: center;
+       } 

@@ -1,0 +1,365 @@
+/*1-Style general*/
+
+*{
+    list-style: none;
+    text-align: justify;
+  }
+
+  body{
+    background: radial-gradient(
+       126.67% 350.28% at -21.35% 0%,
+       #11213F 0%, 
+       #0B0B0B 39.1%, 
+       rgba(2, 23, 64,0.837641) 94.57%, 
+       rgba(2, 23, 64, 0) 100% 
+    );
+    color: #F2CEF2;
+    width: 99%;
+    
+}
+
+a {
+  color: #F2CEF2;
+  
+}
+
+/* 2-Fonts pour les textes */
+/* 2-a-Installation des nouveaux fonts */
+@font-face {
+  font-family: 'Titre H1';
+  src: url('/Fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+  font-family: 'Titre H2';
+  src: url('/Fonts/BEYNO.ttf');
+}
+@font-face {
+  font-family: 'Titre H3';
+  src: url('/Fonts/WakandaForever-Regular.ttf');
+}
+@font-face {
+  font-family: 'Titre_citation_footer';
+  src: url('/Fonts/Cantarell-Regular.ttf');
+}
+
+/* 2-b-Polices des textes */
+h1{
+  font-family: 'Titre H1';
+  font-size: 68px;
+  color: #F2CEF2;
+}
+
+h2{
+  font-family: 'Titre H2';
+  font-size: 32px;
+  color: #F2CEF2;
+}
+
+h3{
+  font-family: 'Titre_citation_footer';
+}
+
+p{
+  font-family: 'Titre_citation_footer';
+  font-size: 16px;
+  text-align: justify;
+}
+
+/*3-Style header*/
+
+header {
+    display: flex;
+    height: 3vw;
+    width: 85vw;
+    column-gap: 40%;
+  }
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 35px;
+    margin-left: 50px;
+    align-items: center;
+  }
+
+.logo div img {
+  width: 15px;
+  margin-left: 3px;
+}
+.logo .x img {
+  width: 9px;
+  margin-left: 3px;
+}
+.logo .marvel img {
+  width: 50px;
+  margin-left: 3px;
+}
+/*2-a-Style nav*/
+nav{
+  height: 25px;
+}
+nav ul a{
+  text-decoration: none;
+  align-items: first baseline;
+}
+
+nav ul a:hover{
+  text-decoration: underline;
+  color: #3D2DA6;
+}
+
+header nav ul {
+    display: flex;
+    column-gap: 20px;
+  }
+
+
+/*3-Style aside*/
+aside {
+    display: flex;
+    flex-direction: row;
+    border-left: 3px solid #9E91B7 ;
+    padding-left: 4px;
+    top: 0%;
+    position: absolute;
+  }
+
+  aside .vide div {
+    height: 200px;
+    border-right: 3px solid #9E91B7 ;
+    width: 3px;
+    padding-left: 2.5px;
+    margin-bottom: 5px;
+}
+
+aside .reseau img {
+  width: 15px;
+}
+
+/*4-Style main*/
+main #intro {
+  margin-top: 1vw;
+  height: 350px;
+  padding-top: 12vh;
+  padding-left: 5vw;
+  background-image: url(/images/Accueil/Pantherhome1..png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  
+}
+
+#defile .float img{
+  float: left;
+}
+
+
+.defile {
+  margin-top: 10vh;
+display: flex;
+  height: 40vh;
+  background-color: #021740;
+}
+
+.defile figure {
+  display: flex;
+  height: 100%;
+  margin: 0px 0px;
+  
+  }
+
+  .premier{
+    width: 120vw;
+    border: 1px solid white;
+     }
+  
+  
+    #defile .defile figure div {
+      padding-left: 1vw;
+      padding-right: 1vw;
+       }
+
+    #defile .defile figure div img {
+      width: 10%;
+       }
+
+
+
+#prince {  
+  margin-top: 15vh;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2vw;
+  }
+
+#prince article{  
+    margin-left: 10vw;
+    padding-top: 5vw;
+   width: 70%;
+    }
+  .carte  {  
+    margin-right: 6vw;
+    }
+
+  .carte .interne {  
+    background-color: #FFFFFF;
+    margin-top: 20vh;
+    border-radius: 5px;
+    
+    }
+  
+    .carte .interne p{  
+    color: #021740;
+    
+    }
+
+  .carte .interne1 {  
+    padding-top: 24em;
+    padding-left: 11vw;
+    }
+
+  .carte .interne2 {  
+    display: flex;
+    text-align: center;
+    padding: 0px 1vw;
+    column-gap: 3%;
+          }
+
+  .carte .interne .interne2 p {  
+    background-color: #3D2DA6;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 1vw ;
+    text-align: center;
+    width: 100%;
+  }  
+
+  .carte .interne3 {  
+
+    padding-bottom: 5vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+          }
+
+  .carte .interne3 strong {  
+   color: #021740;
+          }
+
+          
+  .carte .photo img {  
+    width: 25%;
+    padding-left: 3vw;
+    position: absolute;
+    }
+
+   .carte .fond img{  
+      padding-top: 5vh;
+      align-items: center;
+      width: 30vw;
+      }
+
+/*5-Style formulaire*/
+#formulaire {  
+  width: 50%;
+  height: 75vh;
+  padding-top: 5vh;
+  padding-left: 10vw;
+  padding-right: 5vw;
+  border-radius: 20%;
+  margin-top: 25vw;
+  margin-left: 25vw;
+  border: 1px solid #F2CEF2;
+  background: linear-gradient(to top, #9E91B7 , #FFFFFF);
+  }
+
+  #formulaire p {  
+   text-align: center;
+    } 
+  .formulaire{  
+    color: #021740;
+    height: 1077px;
+    background-image: url(/images/Accueil/Pantherhome7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
+  
+    input {  
+      margin-top: 1vw;
+      height: 4vw;
+      padding-left: 2vw;
+      width: 40vw;
+      border-radius: 38px;
+      background: none;
+      border: 1px solid #021740;
+      }
+
+      #message {  
+        height: 20vh;
+        }
+
+        button {  
+          margin-left: 10vw;
+          margin-top: 1vw;
+          padding-top: 1vw;
+          padding-bottom: 1vw;
+          text-align: center;
+          width: 20vw;
+          border-radius: 20px;
+          background: #FFFFFF;
+          border: none;
+          }
+
+          button:hover{
+            color:  #021740;
+        }
+/*6-Style footer*/
+
+footer  {  
+  height: 692px;
+  background: url(/images/All_pages/back_footer.png);
+  
+  }
+
+  footer .fg {  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    } 
+
+    .f1 {  
+     height: 35vh;
+     width: 35vw;
+     margin-top: 20vh;
+     margin-left: 5vw;
+     justify-content: center;
+     text-align: center;
+     padding-top: 150px;
+     background-image: url(/images/All_pages/footer1.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;  
+    } 
+
+    .sociaux {  
+      margin-top: 20vh;
+      display: flex;
+      gap: 6vw;
+      padding-left: 5vw;
+      height: 300px;
+      
+     } 
+
+     .final {  
+      display: flex;
+      gap: 2vw;
+      
+     } 
+
+     .final img {  
+     width: 2.5vw;
+     } 
+
+     .droit {  
+     padding-left: 5vw;
+      justify-content: center;
+     } 
