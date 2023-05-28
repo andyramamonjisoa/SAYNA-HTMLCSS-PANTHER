@@ -1,0 +1,264 @@
+/*1-Style general*/
+
+*{
+  list-style: none;
+  text-align: justify;
+}
+
+body{
+  background: radial-gradient(
+     126.67% 350.28% at -21.35% 0%,
+     #11213F 0%, 
+     #0B0B0B 39.1%, 
+     rgba(2, 23, 64,0.837641) 94.57%, 
+     rgba(2, 23, 64, 0) 100% 
+  );
+  color: #F2CEF2;
+  width: 99%;
+  font-size: 16px;
+  
+}
+
+a {
+color: #F2CEF2;
+
+}
+
+
+/* 1-a-Animation entrée */
+
+*{
+animation: slide-from-left 2s ease-in-out;
+}
+
+@keyframes slide-from-left {
+from {
+  transform: translateX(-50px);
+  opacity: 5%;
+}
+to {
+  transform: translateX(0);
+}
+}
+
+/* 2-Fonts pour les textes */
+/* 2-a-Installation des nouveaux fonts */
+@font-face {
+font-family: 'Titre H1';
+src: url('/Fonts/PantheraRegular-MVZ9J.ttf');
+}
+@font-face {
+font-family: 'Titre H2';
+src: url('/Fonts/BEYNO.ttf');
+}
+@font-face {
+font-family: 'Titre H3';
+src: url('/Fonts/WakandaForever-Regular.ttf');
+}
+@font-face {
+font-family: 'Titre_citation_footer';
+src: url('/Fonts/Cantarell-Regular.ttf');
+}
+
+/* 2-b-Polices des textes */
+h1{
+font-family: 'Titre H1';
+font-size: 4.2em;
+color: #F2CEF2;
+}
+
+h2{
+font-family: 'Titre H2';
+font-size: 2em;
+color: #F2CEF2;
+}
+
+h3{
+font-family: 'Titre_citation_footer';
+font-size: 1em;
+}
+
+p{
+font-family: 'Titre_citation_footer';
+font-size: 1em;
+text-align: justify;
+}
+
+/*3-Style header*/
+
+header {
+  display: flex;
+  height: 3vw;
+  width: 85vw;
+  column-gap: 40%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  height: 35px;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.logo div img {
+width: 15px;
+margin-left: 3px;
+}
+.logo .x img {
+width: 9px;
+margin-left: 3px;
+}
+.logo .marvel img {
+width: 50px;
+margin-left: 3px;
+}
+/*2-a-Style nav*/
+nav{
+height: 25px;
+}
+nav ul a{
+text-decoration: none;
+align-items: first baseline;
+}
+
+nav ul a:hover{
+text-decoration: underline;
+color: #3D2DA6;
+}
+
+header nav ul {
+  display: flex;
+  column-gap: 20px;
+}
+
+
+/*4-Style main*/
+
+#forever {
+  margin-top: 3vh;
+  height: 100vh;
+  background: url(/images/Wakanda/Pantherwakanda1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60% 20%;
+}
+
+#forever .intro {
+  padding-top: 30vh;
+  margin-left: 5vw;
+  width: 50vw;
+}
+
+#forever .intro p {
+  width: 35vw;
+}
+
+
+#histoire {
+  width: 96.5vw;
+  display: flex;
+  padding-top: 10vh;
+}
+
+#histoire .gauche {
+  width: 40vw;
+  margin-left: 5vw;
+  
+}
+
+#histoire .gauche iframe{
+  width: 100%;
+  
+}
+
+#histoire .droite {
+  width: 40vw;
+  margin-left: 5vw;
+  
+}
+
+#histoire .droite img {
+  width: 100%;
+}
+
+
+/*6-Style footer*/
+
+footer  {  
+    height: 692px;
+    background: url(/images/All_pages/back_footer.png);
+    
+    }
+  
+    footer .fg {  
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      } 
+  
+      .f1 {  
+       height: 35vh;
+       width: 35vw;
+       margin-top: 20vh;
+       margin-left: 5vw;
+       justify-content: center;
+       text-align: center;
+       padding-top: 150px;
+       background-image: url(/images/All_pages/footer1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;  
+      } 
+  
+      .sociaux {  
+        margin-top: 20vh;
+        display: flex;
+        gap: 6vw;
+        padding-left: 5vw;
+        height: 300px;
+        
+       } 
+  
+       .final {  
+        display: flex;
+        gap: 2vw;
+        
+       } 
+  
+       .final img {  
+       width: 3vw;
+       } 
+  
+       .droit {  
+       padding-left: 5vw;
+        justify-content: center;
+       } 
+  
+       footer .f1:hover {  
+        transform: scale(1.1);
+        transition: .4s all ease-in-out;
+       } 
+  
+       footer .sociaux a {  
+        text-decoration: none;
+  
+       } 
+  
+        footer .sociaux a:hover {  
+          text-decoration: underline;
+       } 
+  .droit {  
+        display: flex;
+        align-items: center;
+       } 
+  
+  .point   {  
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #9E91B7;
+    margin: 0 5px;
+       } 
+  
+  

@@ -15,12 +15,30 @@
     );
     color: #F2CEF2;
     width: 99%;
+    font-size: 16px;
     
 }
 
 a {
   color: #F2CEF2;
   
+}
+
+
+/* 1-a-Animation entrée */
+
+*{
+  animation: slide-from-left 2s ease-in-out;
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-50px);
+    opacity: 5%;
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 /* 2-Fonts pour les textes */
@@ -45,23 +63,24 @@ a {
 /* 2-b-Polices des textes */
 h1{
   font-family: 'Titre H1';
-  font-size: 68px;
+  font-size: 4.2em;
   color: #F2CEF2;
 }
 
 h2{
   font-family: 'Titre H2';
-  font-size: 32px;
+  font-size: 2em;
   color: #F2CEF2;
 }
 
 h3{
   font-family: 'Titre_citation_footer';
+  font-size: 1em;
 }
 
 p{
   font-family: 'Titre_citation_footer';
-  font-size: 16px;
+  font-size: 1em;
   text-align: justify;
 }
 
@@ -150,42 +169,41 @@ main #intro {
   
 }
 
-#defile .float img{
-  float: left;
-}
-
-
-.defile {
-  margin-top: 10vh;
-display: flex;
-  height: 40vh;
-  background-color: #021740;
-}
-
-.defile figure {
+/*4-1-Style defile*/
+#defile {
+  margin-left: 5vw;
+  margin-top: 15vh;
   display: flex;
-  height: 100%;
-  margin: 0px 0px;
-  
-  }
+  background-color: #07338C;
+  flex-direction: row;
+  height: 35vh;
+  padding-left: 1.5vw;
+  font-size: 0.8em;
+}
 
-  .premier{
-    width: 120vw;
-    border: 1px solid white;
-     }
-  
-  
-    #defile .defile figure div {
-      padding-left: 1vw;
-      padding-right: 1vw;
-       }
+#defile .float{
+  float: left;
+  clear: none;
+  margin-top: -2.5vh;
+  margin-right: 1vw;
+  height: 40vh;
 
-    #defile .defile figure div img {
-      width: 10%;
-       }
+ }
 
 
 
+ #defile .petit {
+  display: flex;
+
+ }
+
+
+#defile img {
+ height: 100%;
+}
+
+
+/*4-2-Style article*/
 #prince {  
   margin-top: 15vh;
   display: grid;
@@ -214,9 +232,9 @@ display: flex;
     
     }
 
-  .carte .interne1 {  
+  #prince .carte .interne1 {  
     padding-top: 24em;
-    padding-left: 11vw;
+    padding-left: 12.5vw;
     }
 
   .carte .interne2 {  
@@ -268,7 +286,7 @@ display: flex;
   padding-right: 5vw;
   border-radius: 20%;
   margin-top: 25vw;
-  margin-left: 25vw;
+  margin-left: 20vw;
   border: 1px solid #F2CEF2;
   background: linear-gradient(to top, #9E91B7 , #FFFFFF);
   }
@@ -356,10 +374,37 @@ footer  {
      } 
 
      .final img {  
-     width: 2.5vw;
+     width: 3vw;
      } 
 
      .droit {  
      padding-left: 5vw;
       justify-content: center;
      } 
+
+     footer .f1:hover {  
+      transform: scale(1.1);
+      transition: .4s all ease-in-out;
+     } 
+
+     footer .sociaux a {  
+      text-decoration: none;
+
+     } 
+
+      footer .sociaux a:hover {  
+        text-decoration: underline;
+     } 
+.droit {  
+      display: flex;
+      align-items: center;
+     } 
+
+.point   {  
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #9E91B7;
+  margin: 0 5px;
+     } 
+
