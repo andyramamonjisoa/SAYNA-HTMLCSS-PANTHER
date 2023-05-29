@@ -155,17 +155,22 @@ header nav ul {
   width: 35vw;
 }
 
-
-#histoire {
-  width: 96.5vw;
+#histoire .ensemble {
+  width: 90vw;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
   display: flex;
-  padding-top: 10vh;
+  margin-top: 10vh;
+  background: url(/images/Wakanda/Pantherwakanda2.png);
+  background-repeat: no-repeat;
+  background-size: 130%;
+  background-position: top;
+  gap: 5vw;
 }
 
 #histoire .gauche {
+  margin-left: 2.5vw;
   width: 40vw;
-  margin-left: 5vw;
-  
 }
 
 #histoire .gauche iframe{
@@ -175,8 +180,6 @@ header nav ul {
 
 #histoire .droite {
   width: 40vw;
-  margin-left: 5vw;
-  
 }
 
 #histoire .droite img {
